@@ -35,6 +35,7 @@ DomainRecordId="00000"
 DomainRR="www"
 DomainName="example.com"
 DomainType="A"
+DomainLine="mobile"
 DNSServer="dns9.hichina.com"
 ```
 

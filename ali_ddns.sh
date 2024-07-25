@@ -11,6 +11,10 @@ DomainRecordId="00000"
 DomainRR="www"
 DomainName="example.com"
 DomainType="A"
+#移动：mobile，电信：telecom，联通：unicom，三选一
+DomainLine="mobile"
+#DomainLine="telecom"
+#DomainLine="unicom"
 
 # The server address of ALi API
 ALiServerAddr="alidns.aliyuncs.com"
@@ -88,6 +92,7 @@ put_params_UpdateDomainRecord()
 	put_param "RR" "${DomainRR}"
 	put_param "RecordId" "${DomainRecordId}"
 	put_param "Type" "${DomainType}"
+ 	put_param "Line" "${DomainLine}"
 	put_param "Value" "${1}"
 }
 
